@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--  FAVICON  -->
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon" /> -->
+    <link type="image/png" sizes="16x16" rel="icon" href="/assets/images/icons8-car-16.png">
 
     <!--  REMIX ICON  -->
     <link
@@ -57,8 +58,8 @@
     <main class="main">
       <!--  HOME SECTION  -->
       <section class="section home" id="home">
-        <div class="container">
-          <div class="subtitle">Drive anytime, anywhere</div>
+        <div class="container hero__container">
+          <div class="subtitle hero-subtitle">Drive anytime, anywhere</div>
           <h1 class="hero hero-title">
             Super Luxury Fast Cars For Everyday Use.
           </h1>
@@ -68,7 +69,9 @@
             loved ones.
           </p>
           <button class="hero hero-button">
-            Start Here <i class="ri-arrow-down-s-fill"></i></i>
+            <a href="#about"">
+              Start Here <i class="ri-arrow-down-s-fill"></i></i>
+            </a>
           </button>
           <div class="hero hero-statics">
             <div class="statics statics-cars">
@@ -77,18 +80,18 @@
             </div>
             <div class="statics statics-line"></div>
             <div class="statics statics-customers">
-              30000<span>+</span>
+              36000<span>+</span>
               <p class="static-description">Premium Customers</p>
             </div>
           </div>
-          <div class="hero hero-image">
-            <img src="assets/images/hero img.png" alt="Image of McLaren" />
-          </div>
+        </div>
+        <div class="hero hero-image">
+          <img src="assets/images/hero img.png" alt="Image of McLaren" />
         </div>
       </section>
       <!--  ABOUT SECTION  -->
       <section class="section about" id="about">
-        <div class="container">
+        <div class="container about__container">
           <div class="subtitle">A perfect place for all of your needs</div>
           <h2 class="about about-title">
             Where you rent & buy your luxury cars matters.
@@ -114,9 +117,9 @@
               </span>
             </div>
           </div>
-          <div class="about about-image">
-            <img src="assets/images/about-img.png" alt="Car Steering Wheel">
-          </div>
+        </div>
+        <div class="about about-image">
+          <img src="assets/images/about-img.png" alt="Car Steering Wheel">
         </div>
       </section>
 
@@ -124,227 +127,282 @@
       <div class="brands section" id="brands">
         <div class="container brands-grid grid">
           <div class="brands brands-logo">
-            <img src="assets/images/Tesla Logo.png" alt="Car Brand Logo">
+            <img src="assets/images/Tesla Logo.png" class="brand-image" alt="Car Brand Logo">
           </div>
           <div class="brands brands-logo">
-            <img src="assets/images/Mercedes Logo.png" alt="Car Brand Logo">
+            <img src="assets/images/Mercedes Logo.png" class="brand-image" alt="Car Brand Logo">
           </div>
           <div class="brands brands-logo">
-            <img src="assets/images/Bmw Logo.png" alt="Car Brand Logo">
+            <img src="assets/images/Bmw Logo.png" class="brand-image" alt="Car Brand Logo">
           </div>
           <div class="brands brands-logo">
-            <img src="assets/images/Porsche Logo.png" alt="Car Brand Logo">
+            <img src="assets/images/Porsche Logo.png" class="brand-image" alt="Car Brand Logo">
           </div>
           <div class="brands brands-logo">
-            <img src="assets/images/Lamborghini Logo.png" alt="Car Brand Logo">
+            <img src="assets/images/Lamborghini Logo.png" class="brand-image" alt="Car Brand Logo">
           </div>
           <div class="brands brands-logo">
-            <img src="assets/images/Audi Logo.png" alt="Car Brand Logo">
+            <img src="assets/images/Audi Logo.png" class="brand-image" alt="Car Brand Logo">
           </div>
         </div>
       </div>
 
-      <!--  WHY DOPECARS  -->
-      <section class="section why container">
-        <div class="why subtitle">Why LuxRent ?</div>
-        <div class="why why-description"><span class="highlight-color">&#8220;</span> We&#8217;re the perfect plug for people who believe in luxury and comfort. <span class="highlight-color">Together with our customers</span>, we&#8217;re creating a world where people value their cars <span class="highlight-color">&#8221;</span></div>
+      <!--  WHY LUXRENT  -->
+      <section class="section why">
+        <div class="container why__container">
+          <div class="why subtitle">Why LuxRent ?</div>
+          <div class="why why-description"><span class="highlight-color">&#8220;</span> We&#8217;re the perfect plug for people who believe in luxury and comfort. <span class="highlight-color">Together with our customers</span>, we&#8217;re creating a world where people value their cars <span class="highlight-color">&#8221;</span></div>
+        </div>
       </section>
 
       <!--  NEWSLETTER  -->
-      <section class="newsletter-main section container">
-        <div class="newsletter newsletter-title">
-          <h4>Do you want to receive special offers?</h4>
-        </div>
-        <div class="newsletter newsletter-description">
-          <p>Be the first to receive all the information about new cars via email, by simply subscribing to our mailing list.</p>
-        </div>
-        <div class="newsletter newsletter-input">
-          <form action="#">
-            <input type="email" class="newsletter-email" name="email" id="email" placeholder="Enter you Email" required><button class="newsletter-button" type="submit">Subsribe</button>
-          </form>
+      <section class="newsletter-main section">
+        <div class="container newsletter__container">
+          <div class="newsletter newsletter-title">
+            <h4>Do you want to receive special offers?</h4>
+          </div>
+          <div class="newsletter newsletter-description">
+            <p>Be the first to receive all the information about new cars via email, by simply subscribing to our mailing list.</p>
+          </div>
+          <div class="newsletter newsletter-input">
+            <form action="#" class="newsletter-styling">
+              <input type="email" class="newsletter-email" name="email" id="email" placeholder="Enter you Email" required><button class="newsletter-button" type="submit">Subsribe</button>
+            </form>
+          </div>
         </div> 
       </section>
 
       <!-- PRODUCTS -->
-      <section class="section products container" id="products">
-        <p class="product-group-text">Choose from the best</p>
-        <h4 class="product-group-title">Featured luxury cars</h4>
-        <div class="product-selector grid">
-          <button type="button" class="product-group" data-filter="all">
-            All
-          </button>
-          <button type="button" class="product-group" data-filter=".tesla">
-            <img src="assets/images/Tesla Logo.png" alt="">
-          </button>
-          <button type="button" class="product-group" data-filter=".lambo">
-            <img src="assets/images/Lamborghini Logo.png" alt="">
-          </button>
-          <button type="button" class="product-group" data-filter=".benz">
-            <img src="assets/images/Mercedes Logo.png" alt="" >
-          </button>
-        </div>
-        <div class="product-cards grid">
-          <div class="product-card mix tesla">
-            <h4 class="product-title">Tesla</h4>
-            <span class="product-model">Model S</span>
-            <img src="assets/images/Tesla1.png" alt="Tesla Model S" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>217 km/h</p>
-              <div class="product-line"></div>
-              <div>2020</div>
-              <div class="product-line"></div>
-              <div>₹ 80,000</div>
-            </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
+      <section class="section products" id="products">
+        <div class="container products__container">
+          <p class="product-group-text">Choose from the best</p>
+          <h4 class="product-group-title">Featured luxury cars</h4>
+          <div class="product-selector grid">
+            <button type="button" class="product-group" data-filter="all">
+              All
+            </button>
+            <button type="button" class="product-group" data-filter=".tesla">
+              <img src="assets/images/Tesla Logo.png" class="brand-image" alt="">
+            </button>
+            <button type="button" class="product-group" data-filter=".lambo">
+              <img src="assets/images/Lamborghini Logo.png" class="brand-image" alt="">
+            </button>
+            <button type="button" class="product-group" data-filter=".benz">
+              <img src="assets/images/Mercedes Logo.png" class="brand-image" alt="" >
+            </button>
           </div>
-          <div class="product-card mix tesla">
-            <h4 class="product-title">Tesla</h4>
-            <span class="product-model">Model Y</span>
-            <img src="assets/images/Tesla2.png" alt="Tesla Model Y" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>180 km/h</p>
-              <div class="product-line"></div>
-              <div>2022</div>
-              <div class="product-line"></div>
-              <div>₹ 60,000</div>
+          <div class="product-cards grid">
+            <div class="product-card mix tesla">
+              <h4 class="product-title">Tesla</h4>
+              <span class="product-model">Model S</span>
+              <div class="car-image">
+                <img src="assets/images/Tesla1.png" alt="Tesla Model S" class="product-image">
+              </div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>217 km/h</p>
+                <div class="product-line"></div>
+                <div>2020</div>
+                <div class="product-line"></div>
+                <div>₹ 80,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
             </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
-          </div>
-          <div class="product-card mix benz">
-            <h4 class="product-title">Mercedes-Benz</h4>
-            <span class="product-model">AMG GT</span>
-            <img src="assets/images/Benz1.png" alt="Tesla Model Y" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>240 km/h</p>
-              <div class="product-line"></div>
-              <div>2020</div>
-              <div class="product-line"></div>
-              <div>₹ 180,000</div>
+            <div class="product-card mix tesla">
+              <h4 class="product-title">Tesla</h4>
+              <span class="product-model">Model Y</span>
+              <div class="car-image"><img src="assets/images/Tesla2.png" alt="Tesla Model Y" class="product-image"></div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>180 km/h</p>
+                <div class="product-line"></div>
+                <div>2022</div>
+                <div class="product-line"></div>
+                <div>₹ 60,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
             </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
-          </div>
-          <div class="product-card mix benz">
-            <h4 class="product-title">Mercedes-Benz</h4>
-            <span class="product-model">AMG GTR</span>
-            <img src="assets/images/Benz2.png" alt="Tesla Model S" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>280 km/h</p>
-              <div class="product-line"></div>
-              <div>2019</div>
-              <div class="product-line"></div>
-              <div>₹ 280,000</div>
+            <div class="product-card mix benz">
+              <h4 class="product-title">Mercedes-Benz</h4>
+              <span class="product-model">AMG GT</span>
+              <div class="car-image"><img src="assets/images/Benz1.png" alt="Tesla Model Y" class="product-image"></div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>240 km/h</p>
+                <div class="product-line"></div>
+                <div>2020</div>
+                <div class="product-line"></div>
+                <div>₹ 180,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
             </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
-          </div>
-          <div class="product-card mix benz">
-            <h4 class="product-title">Mercedes-Benz</h4>
-            <span class="product-model">AMG S63</span>
-            <img src="assets/images/Benz3.png" alt="Tesla Model S" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>260 km/h</p>
-              <div class="product-line"></div>
-              <div>2021</div>
-              <div class="product-line"></div>
-              <div>₹ 150,000</div>
+            <div class="product-card mix benz">
+              <h4 class="product-title">Mercedes-Benz</h4>
+              <span class="product-model">AMG GTR</span>
+              <div class="car-image"><img src="assets/images/Benz2.png" alt="Tesla Model S" class="product-image"></div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>280 km/h</p>
+                <div class="product-line"></div>
+                <div>2019</div>
+                <div class="product-line"></div>
+                <div>₹ 280,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
             </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
-          </div>
-          <div class="product-card mix benz">
-            <h4 class="product-title">Mercedes-Benz</h4>
-            <span class="product-model">AMG C43</span>
-            <img src="assets/images/Benz4.png" alt="Tesla Model S" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>240 km/h</p>
-              <div class="product-line"></div>
-              <div>2022</div>
-              <div class="product-line"></div>
-              <div>₹ 130,000</div>
+            <div class="product-card mix benz">
+              <h4 class="product-title">Mercedes-Benz</h4>
+              <span class="product-model">AMG S63</span>
+              <div class="car-image"><img src="assets/images/Benz3.png" alt="Tesla Model S" class="product-image"></div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>260 km/h</p>
+                <div class="product-line"></div>
+                <div>2021</div>
+                <div class="product-line"></div>
+                <div>₹ 150,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
             </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
-          </div>
-          <div class="product-card mix lambo">
-            <h4 class="product-title">Lamborghini</h4>
-            <span class="product-model">Huracan Evo</span>
-            <img src="assets/images/Lambo1.png" alt="Tesla Model S" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>300 km/h</p>
-              <div class="product-line"></div>
-              <div>2021</div>
-              <div class="product-line"></div>
-              <div>₹ 350,000</div>
+            <div class="product-card mix benz">
+              <h4 class="product-title">Mercedes-Benz</h4>
+              <span class="product-model">AMG C43</span>
+              <div class="car-image"><img src="assets/images/Benz4.png" alt="Tesla Model S" class="product-image"></div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>240 km/h</p>
+                <div class="product-line"></div>
+                <div>2022</div>
+                <div class="product-line"></div>
+                <div>₹ 130,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
             </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
-          </div>
-          <div class="product-card mix lambo">
-            <h4 class="product-title">Lamborghini</h4>
-            <span class="product-model">Huracan SV</span>
-            <img src="assets/images/Lambo2.png" alt="Tesla Model S" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>300 km/h</p>
-              <div class="product-line"></div>
-              <div>2022</div>
-              <div class="product-line"></div>
-              <div>₹ 380,000</div>
+            <div class="product-card mix lambo">
+              <h4 class="product-title">Lamborghini</h4>
+              <span class="product-model">Huracan Evo</span>
+              <div class="car-image"><img src="assets/images/Lambo1.png" alt="Tesla Model S" class="product-image"></div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>300 km/h</p>
+                <div class="product-line"></div>
+                <div>2021</div>
+                <div class="product-line"></div>
+                <div>₹ 350,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
             </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
-          </div>
-          <div class="product-card mix lambo">
-            <h4 class="product-title">Lamborghini</h4>
-            <span class="product-model">Huracan RWD</span>
-            <img src="assets/images/Lambo3.png" alt="Tesla Model S" class="product-image">
-            <div class="product-details">
-              <span><img src="assets/images/acceleration.png" alt=""></span>
-              <p>300 km/h</p>
-              <div class="product-line"></div>
-              <div>2021</div>
-              <div class="product-line"></div>
-              <div>₹ 340,000</div>
+            <div class="product-card mix lambo">
+              <h4 class="product-title">Lamborghini</h4>
+              <span class="product-model">Huracan SV</span>
+              <div class="car-image"><img src="assets/images/Lambo2.png" alt="Tesla Model S" class="product-image"></div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>300 km/h</p>
+                <div class="product-line"></div>
+                <div>2022</div>
+                <div class="product-line"></div>
+                <div>₹ 380,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
             </div>
-            <div class="buy-rent">
-              <span class="product-buy">Buy</span>
-              <span class="product-rent">Rent</span></div>
+            <div class="product-card mix lambo">
+              <h4 class="product-title">Lamborghini</h4>
+              <span class="product-model">Huracan RWD</span>
+              <div class="car-image"><img src="assets/images/Lambo3.png" alt="Tesla Model S" class="product-image"></div>
+              <div class="product-details">
+                <span><img src="assets/images/acceleration.png" alt=""></span>
+                <p>300 km/h</p>
+                <div class="product-line"></div>
+                <div>2021</div>
+                <div class="product-line"></div>
+                <div>₹ 340,000</div>
+              </div>
+              <div class="buy-rent">
+                <span class="product-buy">Buy</span>
+                <span class="product-rent">Rent</span></div>
+            </div>
           </div>
         </div>
       </section>
 
       <!--  APP  -->
-      <section class="section app" id="app"></section>
+      <section class="section app__section" id="app">
+        <img class="app-image" src="assets/images/Phone.png" alt="">
+        <div class="container app__container">
+          <h4 class="app app-title">LuxRent also works on all kinds of mobile devices.</h4>
+          <p class="app app-description">Download the app today and enjoy steady and uninterrupted service 24/7 daily. Our app makes it easy to rent or buy your dream luxury cars.</p>
+          <div class="app app-apple-android">
+            <a class="app app-apple"><img src="assets/images/apple-logo.png" alt="">Download for IOS</a>
+            <a class="app app-android"><img src="assets/images/android-logo.png" alt="">Download for Android</a>
+          </div>
+        </div>
+      </section>
 
       <!--  FOOTER  -->
-      <footer class="footer section" id="app"></footer>
-    </main>
-    <!--  SCROLL UP  -->
+      <footer class="footer footer__section" id="app">
+        <div class="footer grid footer__container">
+          
+            <div class="footer footer__title nav__logo">
+              <i class="ri-roadster-line"></i><span class="logoName">LuxRent</span>
+              <div class="footer footer__description"><p>We are everywhere around you, but our office is at Mumbai, India</p></div>
+            </div>
+            <div class="footer footer__sub__list">
+              <div class="footer footer__sub__heading"><h4>Information</h4></div>
+              <ul>
+                <li class="footer__list__element">FAQ</li>
+                <li class="footer__list__element">Blog</li>
+                <li class="footer__list__element">Support</li>
+              </ul>
+            </div>
+          
+            <div class="footer">
+              <ul>
+                <div class="footer footer__sub__heading">Company</div>
+                <li class="footer__list__element">About us</li>
+                <li class="footer__list__element">Careers</li>
+                <li class="footer__list__element">Contact US</li>
+                <li class="footer__list__element">Lux Media</li>
+              </ul>
+            </div>
+            <div class="footer__logo__container">
+              <div class="footer footer__sub__heading">Follow Us On</div>
+              <span class="footer__logo"><i class="ri-facebook-fill"></i></span>
+              <span class="footer__logo"><i class="ri-instagram-fill"></i></span>
+              <span class="footer__logo"><i class="ri-twitter-fill"></i></span>
+            </div>
+          <div class="footer__line__copyright">
+            <div class="footer__line"></div>
+            <div class="footer__copyright"><p>© All rights reserved</p></div>
+          </div>
+        </div>
+      </footer>
 
+      <!--  SCROLL UP  -->
+      <a href="#" class="go__to__top" id="scrollUp"><i class="ri-arrow-up-fill"></i></a>
+    </main>
     <!--  SCROLL REVEAL  -->
-    <script src=""></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
     
     <!--  MIXITUP JS  -->
     <script src="assets/js/mixitup.min.js"></script>
-    
+
     <!--  MAIN JS  -->
     <script src="assets/js/main.js"></script>
 
